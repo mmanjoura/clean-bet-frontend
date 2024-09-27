@@ -21,9 +21,7 @@ export default function uk() {
   return (
     <>
       <DefaultLayout
-        // selectedEventName={selectedEventName}
         selectedDate={selectedDate}
-        // onEventNameChange={handleEventNameChange}
         onDateChange={handleDateChange}
       >
         <UkList  selectedDate={selectedDate}/>

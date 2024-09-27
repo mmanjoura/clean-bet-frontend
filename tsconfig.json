@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/Racing/MeetingEvents.jsx", "src/components/Racing/ControlPanel.jsx", "src/components/Tables/TableOne.jsx", "src/components/Racing/MeetingsDate.jsx", "src/app/racing/meetings/page.jsx", "src/app/racing/dashboard/page.jsx", "src/app/racing/result/page.jsx", "src/app/racing/cleanbet/page.jsx", "src/components/Breadcrumbs/Breadcrumb.jsx", "src/components/Header/index.jsx", "src/components/Layouts/DefaultLayout.jsx", "src/app/page.jsx", "src/components/FormElements/DatePicker/DatePickerOne.jsx", "src/components/Racing/CleanBet.jsx", "src/components/Tables/TableThree.jsx", "src/components/Charts/ChartTwo.jsx", "src/components/Racing/UkList.jsx", "src/components/Tables/TableTwo.jsx"],
+  "exclude": ["node_modules"]
+}

@@ -127,7 +127,7 @@ const PredictionTable = ({ selectedDate }) => {
               {predictions?.map((prediction, key) => (
                 <tr key={key}>
                   <td className="border-b border-[#eee] px-4 py-3 pl-9 dark:border-strokedark xl:pl-11">
-                    <h5 className={`font-medium ${parseInt(prediction?.position?.split('/')[0]) === 1 ? 'text-meta-3' : 'text-meta-11'}`}>
+                    <h5 className={`font-medium  ${parseInt(prediction?.current_event_position?.split('/')[0]) === 1 ? 'text-meta-3' : 'text-meta-11'}`}>
                       {prediction?.selection_name || "text-meta-4"}
                     </h5>
                     <p className="text-sm text-meta-5">
@@ -156,8 +156,8 @@ const PredictionTable = ({ selectedDate }) => {
                     </p>
                   </td>
                   <td className="border-b border-[#eee] px-10 py-5 dark:border-strokedark">
-                    <span className={`flex items-center ${parseInt(prediction?.position?.split('/')[0]) === 1 ? "text-meta-3" : "text-meta-1"}`}>
-                      {false ? (<FaCheck />) : (<FaTimes />)}
+                    <span className={`flex items-center ${parseInt(prediction?.current_event_position?.split('/')[0]) === 1 ? "text-meta-3" : "text-meta-1"}`}>
+                      {parseInt(prediction?.current_event_position?.split('/')[0]) === 1 ? (<FaCheck />) : (<FaTimes />)}
                     </span>
                   </td>
                   <td className="border-b border-[#eee] px-10 py-5 dark:border-strokedark">
